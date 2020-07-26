@@ -1,0 +1,90 @@
+#game coded by DIPAK BANSODE
+from os import system
+a=[" ","1","2","3","4","5","6","7","8","9"]
+b=[0,1,2,3,4,5,6,7,8,9]
+r=[]
+w = 10
+x = y = 0
+o = "X"
+p = "O"
+def check():
+    if (a[1] == a[2] == a[3] == o or a[4] == a[5] == a[6] == o or a[7] == a[8] == a[9] == o or a[1] == a[4] == a[7] == o or a[2] == a[5] == a[8] == o or a[3] == a[6] == a[9] == o or a[1] == a[5] == a[9] == o or a[3] == a[5] == a[7] == o):
+        print("player X WON")
+        input("enter any key to exit")
+        exit()
+    elif (a[1] == a[2] == a[3] == p or a[4] == a[5] == a[6] == p or a[7] == a[8] == a[9] == p or a[1] == a[4] == a[7] == p or a[2] == a[5] == a[8] == p or a[3] == a[6] == a[9] == p or a[1] == a[5] == a[9] == p or a[3] == a[5] == a[7] == p):
+        print("player O WON")
+        input("enter any key to exit")
+        exit()
+def pattern():
+    t = 1
+    c = 1
+    h = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    while t <= 3:
+        t = t + 1
+        i = 1
+        while i <= 3:
+            print(h[c], end=" ")
+            i = i + 1
+            c = c + 1
+            if i <= 3:
+                print("|", end=" ")
+            elif t <= 3:
+                print("\n---------")
+    # print("1","|","2","|","3")
+    # print(" -------")
+    # print("4","|","5","|","6")
+    # print(" -------")
+    # print("7","|","8","|","9")
+pattern()
+def structure():
+    t = 1
+    c = 1
+    h = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    while t <= 3:
+        t = t + 1
+        i = 1
+        while i <= 3:
+            print(a[int(h[c])], end=" ")
+            i = i + 1
+            c = c + 1
+            if i <= 3:
+                print("|", end=" ")
+            elif t <= 3:
+                print("\n---------")
+    # print(a[1], "|", a[2], "|", a[3])
+    # print(" -------")
+    # print(a[4], "|", a[5], "|", a[6])
+    # print(" -------")
+    # print(a[7], "|", a[8], "|", a[9])
+
+def playerX():
+    check()
+    z = int(input("\nplayer X enter block no.\n"))
+    if z in b:
+        a[z]="X"
+        b.remove(z)
+        r.append(z)
+        system('cls')
+        structure()
+    else:
+        print("you can't choose exiting positon")
+        playerX()
+
+def playerO():
+        check()
+        x=int(input("\nplayer O enter block no.\n"))
+        if x in b:
+            a[x]="O"
+            b.remove(x)
+            r.append(x)
+            system('cls')
+            structure()
+        else:
+            print("you can't choose exiting positon")
+            playerO()
+
+while w != 1:
+    check()
+    playerX()
+    playerO()
