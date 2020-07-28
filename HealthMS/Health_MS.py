@@ -23,13 +23,17 @@ def w_exercise(n):
 def r_diet(e):
     """This function is used to read inside diet section of user N"""
     with open(e,"r+") as f:
-        print(f.readlines())
+                for line in f:
+            print(line,end="")
+        # print(f.readline())
     main()
 
 def r_exercise(e):
     """This function is used to read inside exercise section of user N"""
     with open(e,"r+") as f:
-        print(f.readlines())
+                for line in f:
+            print(line,end="")
+        # print(f.readline())
     main()
 
 def writte():
