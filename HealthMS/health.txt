@@ -1,0 +1,13 @@
+Health management system
+read or write
+choose person
+diet and exercise
+clients harry rohan hammad
+create files
+funtion 
+input client name , diet or exercise
+
+print time 
+chicken roti \n
+
+retrive exercise or food
