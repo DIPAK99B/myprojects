@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online Examination System</title>
+  <link href="css/test.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="data/css/bootstrap.min.css">
+  <script type="text/javascript" src="data/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="data/css/bootstrap.min.css">
+  <script type="text/javascript" src="js/clear.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <h1 class="heading-name">
+      Online Examination System
+    </h1>
+  </div>
+  <!-- Login info and timing -->
+  <div class="subject-info">
+    <h1 class="subject">
+      biology chapter 1
+    </h1>
+  </div>
+  <div class="timing">
+    <p class="ign"> Welcome : ( user name )</p>
+    <p class="time"> REMAINING TIME : TIME here!</p>
+  </div>
+  <!-- question paper start from here-->
+  <div class="qno">
+    <p class="number">Number : </p>
+    <p class="neg">Correct marks: +2 Negative marks: -0.5</p>
+  </div>
+  <div class="q">
+    <div class="question">
+      <h1>Q 1 : Question here !</h1>
+    </div>
+    <div class="options">
+      <form name="opt" action="#">
+        <input type="radio" name="option" class="choice" value="" /> option 1 <br>
+        <input type="radio" name="option" class="choice" value="" /> option 2 <br>
+        <input type="radio" name="option" class="choice" value="" /> option 3 <br>
+        <input type="radio" name="option" class="choice" value="" /> option 4 <br> <br>
+        <button type="button" class="btn-btn-primaryz" onclick="clearSelection('opt','option',false);">Previous</button>
+        <button type="button" class="btn-btn-primaryz" onclick="clearSelection('opt','option',false);">Next</button>
+        <button type="button" class="btn-btn-primaryz" onclick="clearSelection('opt','option',false);">Clear</button>
+        <button type="button" class="btn-btn-primaryz" onclick="clearSelection('opt','option',true);">FINISH</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer start from here-->
+  <div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Contact Info</h5>
+      <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+      <a href="https://in.linkedin.com/in/dipak-bansode-213bbb152" class="btn-btn-primary">Contact Us</a>
+      <a href="#" class="btn-btn-primary1">Whatsapp</a>
+      <a href="https://www.youtube.com/channel/UCZj1CTt3azBgRiTIJTCInbw" class="btn-btn-primary2">Youtube</a>
+      <a href="#" class="btn-btn-primary3">Admin</a>
+    </div>
+    <div class="card-footer text-muted">
+      Made by Dipak Bansode @ 2021
+    </div>
+  </div>
+</body>
+
+</html>
