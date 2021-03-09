@@ -7,3 +7,25 @@ making detailed blue print of the project
 
 
 https://www.youtube.com/watch?v=L5-8E3q72PY&ab_channel=ThapaTechnical
+
+
+home
+	test id
+	user information
+	
+login
+	username 
+	pass
+
+registration
+	all details 
+test
+	input
+		subject id
+		user information 
+	output 
+		quesiton and options 
+		score 
+		user id
+
+
