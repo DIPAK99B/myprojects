@@ -1,2 +1,0 @@
-start auto increment number from 1 after deleting all rows
-ALTER TABLE registration AUTO_INCREMENT = 1;
